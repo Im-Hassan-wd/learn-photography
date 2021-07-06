@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+html {
+  scroll-behavior: smooth;
+}
+/* GLOBAL */
+#showcase h1 {
+  padding: 5px 0;
+  text-align: center;
+  color: #1f4870;
+}
+#showcase p {
+  padding: 10px 0;
+  text-align: center;
+}
+/* TITLE SECTION */
+#title {
+  height: 70vh;
+  background: url(assets/photo-art.jpg);
+  border-bottom-right-radius: 500px;
+  /* background-repeat: no-repeat;
+  background-size: cover;*/
+  background-position: center;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img{
+  padding: 0 5px;
+}
+
+.title-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #777;
+  padding: 10px;
+}
+.title-content ul {
+  display: flex;
+  list-style: none;
+}
+
+.title-content li {
+  padding: 0 65px;
+}
+.title-content a {
+  text-decoration: none;
+  color: #000;
+}
+.title-content a:hover{
+  letter-spacing: 1px;
+  color: #333;
+}
+.burger {
+  display: none;
+}
+.intro {
+  text-align: center;
+  margin: 35vh auto;
+}
+.intro button {
+  margin: 5px 0;
+  padding: 5px 15px;
+  background: #00539cff;
+  border: 1px solid #00539cff;
+  color: #fff;
+}
+
+/* CAMERA SECTION */
+#camera {
+  padding: 40px 0;
+}
+.cameras {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 30px;
+}
+.cameras img {
+  width: 100%;
+}
+
+/* IMAGE SLIDER SECTION */
+#carousel_container {
+  margin: 50px auto;
+  max-width: 640px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel_slide {
+  display: flex;
+  width: 640px;
+}
+.carousel_slide img {
+  width: 100%;
+}
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  font-size: 30px;
+  z-index: 10;
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  font-size: 30px;
+  z-index: 10;
+}
+
+/* GOALS SECTION */
+#goals {
+  margin: 100px 0;
+}
+.offer {
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+.offer p {
+  width: 300px;
+}
+
+/* BECOME A MEMBER */
+#membership {
+}
+#membership h1,
+#membership p {
+  text-align: center;
+}
+form {
+  width: 400px;
+  margin: 20px auto;
+}
+input,
+textarea,
+#membership button {
+  width: 370px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  margin: 5px;
+  outline-color: #eee;
+}
+#membership button {
+  background: #00539cff;
+  color: #fff;
+}
+/* PAGE DOWM */
+.the-end {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 812px) {
+  .title-content ul {
+    padding: 0 10px;
+  }
+  .cameras {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 415px) {
+  #title{
+    border-radius: 0 20% 50% 0;
+  }
+  .cameras {
+    grid-template-columns: 1fr;
+  }
+  .title-content ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+  }
+  .title-content li {
+    padding: 50px;
+  }
+  .title-content ul.active {
+    transition: all 1s ease;
+    background: #eee;
+    display: block;
+  }
+  .burger {
+    display: block;
+  }
+  .fas fa-ellipsis-v {
+    position: sticky;
+    top: 10px;
+    z-index: 30;
+  }
+}
+
+/* ghjklk */

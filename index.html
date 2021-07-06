@@ -4,103 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description " content="Shutter Up | phographer's website">
     <title>Shutter Up | Photography</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous ">
-   <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/camera.svg">
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous "> -->
+   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+   <!-- <link rel="stylesheet" href="bootstrap\bootstrap-4.3.1-dist\css\bootstrap.min.css">
+   <link rel="stylesheet" href="bootstrap\bootstrap-4.3.1-dist\css\bootstrap.grid.min.css">
+   <link rel="stylesheet" href="bootstrap\bootstrap-4.3.1-dist\css\bootstrap.reboot.css">
+</head> -->
 <body>
-    <section class='shutter_up'>
-        <section class="shutter_header">
-            <div class="over-lay"></div>
-            <div class="wrap">
+    <section id='showcase'>
+        <section id="title">
+          <div class="title-content">
+            <header>
+              <h1>Shutter</h1>
+              <img src="assets/img/icon.png" width="50px">
+            </header>
 
-                <header>
-                    <h1>Shutter up <i class="fas fa-camera"></i></h1>
-                </header>
+            <nav>
+              <ul>
+                <li><a href='#shutter_camera'>Learn</a></li>
+                <li><a href='#carousel_container'>About</a></li>
+                <li><a href="signup.html">sign up</a></li>
+              </ul>
+            </nav>
 
-                <nav>
-                    <ul>
-                        <li><a href='#'>Produce</a></li>
-                         <li><a href='#'>About</a></li>
-                         <li><a href='#'>Membership</a></li>
-                    </ul>
-                </nav>
+            <!-- navigation bar on smaller screens -->
+            <div class="burger">
+              <i class="fas fa-ellipsis-v"></i>
             </div>
-            <div class="content">
+          </div>
 
-                <h1>Become a weird photographer</h1>
-                <p>Join ever growing community of Shutter up</p>
-                <button class="signUp">Sign Up</button>
-
-            </div>
+          <div class="intro">
+            <h1>Become a weird photographer</h1>
+            <p>Join ever growing community of Twirl</p>
+            <button class="signUp">Sign Up</button>
+          </div>
 
         </section>
 
 
-        <section class="shutter_camera">
-            <div class="content">
 
-                <h1>High Photography Production Standard</h1>
-                <p>We will teach you how to produce high quality content</p>
+      <section id="camera">
+          <div class="content">
+              <h1>High Photography Production Standard</h1>
+              <p>We will teach you how to produce high quality content</p>
+          </div>
+          <div class="cameras">
+              <img src="./assets/camera1.jpg" alt="">
+              <img src="./assets/camera2.jpg" alt="">
+              <img src="./assets/camera3.jpg" alt="">
+              <img src="./assets/camera4.jpg" alt="">
+              <img src="./assets/camera5.jpg" alt="">
+              <img src="./assets/camera8.jpg" alt="">
+              <img src="./assets/camera9.jpg" alt="">
+              <img src="./assets/camera12.jpg" alt="">
+              <img src="./assets/camera13.jpg" alt="">
+          </div>
+      </section>
 
+
+        <section id="carousel_container">
+            <div class="text">
+                <h1>You make the world exicting</h1>
+                <p>What you can accomplish as a phographer</p>
             </div>
-            <div class="camera">
-                <img src="./assets/camera2.jpg" alt="">
-                <img src="./assets/camera3.jpg" alt="">
-                <img src="./assets/camera4.jpg" alt="">
-                <img src="./assets/camera5.jpg" alt="">
-                <img src="./assets/camera6.jpg" alt="">
-                <img src="./assets/camera9.jpg" alt="">
-                <img src="./assets/camera10.jpg" alt="">
-                <img src="./assets/photo10.jpg" alt="">
-                <img src="./assets/photo13.jpg" alt="">
-            </div>
-        </section>
-        <section class="shutter_carousel">
-            <div class='carousel-container'>
-                <div class="carousel-slide">
-                    <img src="./pexels-kaique-rocha-243757.jpg" alt="">
-                </div>
-            </div>
-                <button id=prevBtn>prev</button>
-                <button id=nextBtn>Next</button>
-        </section>
-        <section class="provide">
-            <div class="content">
-                <h1>We provide everything</h1>
-                <p>From wide range of equipment to software</p>
-                <div class="offer">
-                    <div>
-                    <i class="fas fa-camera"></i>
-                    <p>We provide the best camera, lights and lenses.</p>
-                    </div>
-
-                    <div>
-                    <i class="fas fa-paper-plane"></i>
-                    <p>Software is just as important has hardware. We provide all adobe product and more.</p>
-                    </div>
-
-                    <div>
-                    <i class="fas fa-coffee"></i>
-                    <p>Unlimited coffee for you to keep you for what you love.</p>
-                    </div>
-                </div>
+            <i class="fas fa-angle-left" id="prevBtn"></i>
+            <i class="fas fa-angle-right" id="nextBtn"></i>
+            <div class="carousel_slide">
+                <!-- <img src="assets/carousel9.jpg" alt="" class="lastClone"> -->
+                <img src="assets/carousel3.jpg" alt="">
+                <img src="assets/carousel1.jpg" alt="">
+                <img src="assets/carousel2.jpg" alt="">
+                <img src="assets/carousel4.jpg" alt="">
+                <img src="assets/carousel5.jpg" alt="">
+                <img src="assets/carousel6.jpg" alt="">
+                <img src="assets/carousel7.jpg" alt="">
+                <img src="assets/carousel8.jpg" alt="">
+                <img src="assets/carousel9.jpg" alt="">
+                <!-- <img src="assets/carousel1.jpg" alt="" class="firstClone"> -->
             </div>
         </section>
-        <section class="shutter_form">
+
+
+        <section id="membership">
             <h1>Become a member today</h1>
             <p>Gain special access to all feature</p>
-            <form action="submited" class="form_input">
+            <form netlify>
                 <div class="input_text">
-                    <input type="text" placeholder="type in your name young master" required>
+                    <input type="text" placeholder="Name" required>
                 </div>
 
                 <div class="input_text">
-                    <input type="email" placeholder="type in your weird email" required>
+                    <input type="email" placeholder="Email" required>
                 </div>
                 <div>
-                <textarea name="text" id="" cols="30" rows="10"></textarea>
+                <textarea name="text" cols="50" rows="10" placeholder="Any message for us"></textarea>
                 </div>
 
                 <div>
@@ -108,7 +110,10 @@
                 </div>
             </form>
         </section>
-        <p class="creator">Created by Hassan,2020.</p>
+        <div class="the-end">
+            <p class="creator">Created by Hassan,2020.</p>
+        </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
