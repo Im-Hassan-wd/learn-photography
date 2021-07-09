@@ -10,12 +10,6 @@ burger.addEventListener('click', () => {
 const carouselSlide = document.querySelector('.carousel_slide');
 const carouselImages = document.querySelectorAll('.carousel_slide img');
 
-carouselImages.forEach((image, i) => {
-  console.log(image.clientWidth, i)
-});
-
-
-
 
 let counter = 0;
 //button
